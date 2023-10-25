@@ -2,14 +2,13 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 20px;
-    background-color: #f0f0f0; /* Light gray background */
+    background-color: #f0f0f0;
 }
 
 h1 {
     color: #333;
-    border-bottom: 2px solid #333; /* Add a border under the heading */
-    padding-bottom: 10px; /* Space between the border and text */
-}
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px; 
 
 ul {
     list-style: none;
@@ -18,11 +17,11 @@ ul {
 
 li {
     margin: 10px 0;
-    border: 1px solid #999; /* Add a border around each list item */
+    border: 1px solid #999; 
     padding: 10px;
-    background-color: #fff; /* White background for list items */
-    border-radius: 5px; /* Rounded corners for list items */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    background-color: #fff; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 #glossary {
@@ -35,9 +34,8 @@ li {
 
 #glossary li {
     text-align: left;
-    border-left: 4px solid #555; /* Add a colored border to the glossary items */
-    padding-left: 10px; /* Space between the border and text */
+    border-left: 4px solid #555; 
+    padding-left: 10px; 
     margin: 5px 0;
-    background-color: #f9f9f9; /* Light gray background for glossary items */
-}
+    background-color: #f9f9f9; 
 
