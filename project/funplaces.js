@@ -1,4 +1,3 @@
-
 const places = [
     {
         name: "Goldreef City Theme Park",

@@ -3,54 +3,52 @@ function add(number1, number2) {
     return number1 + number2;
 }
 
-function addNumbers(num1, num2) {
+function addNumbers() {
+    const num1 = parseFloat(document.getElementById("add1").value);
+    const num2 = parseFloat(document.getElementById("add2").value);
     const result = add(num1, num2);
-    return `Result: ${result}`;
+    document.getElementById("sum").textContent = `Result: ${result}`;
 }
 
-
-const currentDate = new Date();
-
-const currentYear = currentDate.getFullYear();
+document.getElementById("addNumbers").addEventListener("click", addNumbers);
 
 
-const yearElement = document.getElementById("year");
-yearElement.textContent = `Current Year: ${currentYear}`;
+const subtract = function (number1, number2) {
+    return number1 - number2;
+};
+
+function subtractNumbers() {
+    const num1 = parseFloat(document.getElementById("subtract1").value);
+    const num2 = parseFloat(document.getElementById("subtract2").value);
+    const result = subtract(num1, num2);
+    document.getElementById("difference").textContent = `Result: ${result}`;
+}
+
+document.getElementById("subtractNumbers").addEventListener("click", subtractNumbers);
 
 
-const num1 = 5;
-const num2 = 10;
-const resultMessage = addNumbers(num1, num2);
-console.log(resultMessage);
+const multiply = (number1, number2) => number1 * number2;
+
+function multiplyNumbers() {
+    const num1 = parseFloat(document.getElementById("factor1").value);
+    const num2 = parseFloat(document.getElementById("factor2").value);
+    const result = multiply(num1, num2);
+    document.getElementById("product").textContent = `Result: ${result}`;
+}
+
+document.getElementById("multiplyNumbers").addEventListener("click", multiplyNumbers);
 
 
-const numbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+function divide(number1, number2) {
+    return number1 / number2;
+}
 
-const arrayElement = document.getElementById("array");
-arrayElement.textContent = `Array: ${numbersArray.join(", ")}`;
+const divideNumbers = function () {
+    const num1 = parseFloat(document.getElementById("dividend").value);
+    const num2 = parseFloat(document.getElementById("divisor").value);
+    const result = divide(num1, num2);
+    document.getElementById("quotient").textContent = `Result: ${result}`;
+};
 
-
-const oddNumbers = numbersArray.filter(number => number % 2 !== 0);
-const oddElement = document.getElementById("odds");
-oddElement.textContent = `Odds: ${oddNumbers.join(", ")}`;
-
-
-const evenNumbers = numbersArray.filter(number => number % 2 === 0);
-const evenElement = document.getElementById("evens");
-evenElement.textContent = `Evens: ${evenNumbers.join(", ")}`;
-
-
-const sumOfArray = numbersArray.reduce((total, number) => total + number, 0);
-const sumOfArrayElement = document.getElementById("sumOfArray");
-sumOfArrayElement.textContent = `Sum of Array: ${sumOfArray}`;
-
-
-const multipliedArray = numbersArray.map(number => number * 2);
-const multipliedElement = document.getElementById("multiplied");
-multipliedElement.textContent = `Multiplied: ${multipliedArray.join(", ")}`;
-
-
-const sumOfMultiplied = multipliedArray.reduce((total, number) => total + number, 0);
-const sumOfMultipliedElement = document.getElementById("sumOfMultiplied");
-sumOfMultipliedElement.textContent = `Sum of Multiplied: ${sumOfMultiplied}`;
+document.getElementById("divideNumbers").addEventListener("click", divideNumbers);
 
