@@ -1,4 +1,4 @@
-/* Add your CSS styles here */
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -15,7 +15,7 @@ ul {
 }
 
 li {
-    background-color: #fff;
+    background-color: #a1bf0d;
     padding: 20px;
     margin: 10px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
