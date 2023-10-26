@@ -1,28 +1,7 @@
-const places = [
-    {
-        name: "Goldreef City Theme Park",
-        location: "Cnr Northern parkway and Data Crescent, Ormonde",
-        image: "gcity.png",
-        category: "Amusement Park"
-    },
-    {
-        name: "Pretoria Zoo",
-        location: "232 Boom St, Daspoort 319-Jr, Pretoria",
-        image: "zoo.png",
-        category: "Zoo"
-    },
-    {
-        name: "Sunny Park Playground",
-        location: "789 Sunny Rd, Village",
-        image: "zitapark.png",
-        category: "Playground"
-    }
-];
-
 const placeList = document.getElementById("placeList");
 
-function renderPlaces() {
-    placeList.innerHTML = ""; 
+function renderPlaces(places) {
+    placeList.innerHTML = "";
 
     places.forEach(place => {
         const item = document.createElement("li");
@@ -36,4 +15,17 @@ function renderPlaces() {
     });
 }
 
-renderPlaces();
+async function fetchPlaces() {
+    try {
+        const response = await fetch('fun.json'); ile
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        renderPlaces(data.places);
+    } catch (error) {
+        console.error('Error fetching data:', error);
+    }
+}
+
+fetchPlaces();

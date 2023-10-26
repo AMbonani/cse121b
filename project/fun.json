@@ -1,0 +1,22 @@
+{
+    "places": [
+        {
+            "name": "Goldreef City Theme Park",
+            "location": "Cnr Northern parkway and Data Crescent, Ormonde",
+            "image": "gcity.png",
+            "category": "Amusement Park"
+        },
+        {
+            "name": "Pretoria Zoo",
+            "location": "232 Boom St, Daspoort 319-Jr, Pretoria",
+            "image": "zoo.png",
+            "category": "Zoo"
+        },
+        {
+            "name": "Sunny Park Playground",
+            "location": "789 Sunny Rd, Village",
+            "image": "zitapark.png",
+            "category": "Playground"
+        }
+    ]
+}
