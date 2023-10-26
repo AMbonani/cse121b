@@ -18,8 +18,7 @@ const displayTemples = (temples) => {
 
 const getTemples = async () => {
   try {
-    
-    const response = await fetch("https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg");
+    const response = await fetch("https://byui-cse.github.io/cse121b-ww-course/resources/temples.json"); 
     const data = await response.json();
     templeList.push(...data);
     displayTemples(templeList);
