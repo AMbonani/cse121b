@@ -1,22 +1,26 @@
-{
-    "places": [
-        {
-            "name": "Goldreef City Theme Park",
-            "location": "Cnr Northern parkway and Data Crescent, Ormonde",
-            "image": "gcity.png",
-            "category": "Amusement Park"
-        },
-        {
-            "name": "Pretoria Zoo",
-            "location": "232 Boom St, Daspoort 319-Jr, Pretoria",
-            "image": "zoo.png",
-            "category": "Zoo"
-        },
-        {
-            "name": "Sunny Park Playground",
-            "location": "789 Sunny Rd, Village",
-            "image": "zitapark.png",
-            "category": "Playground"
-        }
-    ]
-}
+[
+    {
+        "name": "Goldreef City Theme Park",
+        "location": "Cnr Northern parkway and Data Crescent, Ormonde",
+        "image": "gcity.png",
+        "category": "Amusement Park",
+        "description": "A place with rides and games for kids.",
+        "link": "https://www.goldreefcity.co.za/theme-park/"
+    },
+    {
+        "name": "Pretoria Zoo",
+        "location": "232 Boom St, Daspoort 319-Jr, Pretoria",
+        "image": "zoo.png",
+        "category": "Zoo",
+        "description": "A facility where kids can see and learn about animals.",
+        "link": "https://www.pretoriazoo.org/"
+    },
+    {
+        "name": "Sunny Park Playground",
+        "location": "789 Sunny Rd, Village",
+        "image": "zitapark.png",
+        "category": "Playground",
+        "description": "An outdoor area with equipment for kids to play on.",
+        "link": "https://cedarjunction.co.za/"
+    }
+]
